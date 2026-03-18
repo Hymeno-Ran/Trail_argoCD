@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: app:v1
+        image: nginx:latest
         # imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
