@@ -17,10 +17,10 @@ spec:
         image: nginx:latest
         # imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 3000
+        - containerPort: 80
         readinessProbe:
           httpGet:
             path: /
-            port: 3000
+            port: 80
           initialDelaySeconds: 3
           periodSeconds: 5
